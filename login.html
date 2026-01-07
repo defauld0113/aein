@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" class="home-page">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIEN Travel – Partner / Admin Portal</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body class="home-page">
+  <!-- Fixed hero background -->
+  <div class="hero-bg"></div>
+  <div class="overlay"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="brand">
+      <img src="logo.png" alt="AIEN Logo" class="logo" />
+      <span class="brand-name">AIEN Travel</span>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#login">Portal</a></li>
+        <li><a href="#contact">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- AUTH SECTION (LOGIN + SIGNUP) -->
+    <section id="login" class="section light reveal">
+      <div class="container login-container">
+        <div class="login-header">
+          <h2>Partner / Admin Portal</h2>
+          <p class="login-subtitle">
+            Securely access or create your AIEN Travel partner account.
+          </p>
+
+          <!-- Tabs -->
+          <div class="auth-tabs" role="tablist">
+            <button
+              class="auth-tab active"
+              id="tab-login"
+              role="tab"
+              aria-controls="panel-login"
+              aria-selected="true"
+            >
+              Login
+            </button>
+            <button
+              class="auth-tab"
+              id="tab-signup"
+              role="tab"
+              aria-controls="panel-signup"
+              aria-selected="false"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+
+        <div class="login-layout">
+          <!-- Info column -->
+          <aside class="login-info card login-info-card">
+            <h3>AIEN Partner Advantages</h3>
+            <ul class="login-benefits">
+              <li>Verified guests, higher occupancy and trusted payouts.</li>
+              <li>Real-time control over rates, inventory and offers.</li>
+              <li>Smart performance reporting across your portfolio.</li>
+            </ul>
+            <p class="login-help-text">
+              Need help with onboarding?
+              <a href="#contact">Contact our partner success team</a> any time.
+            </p>
+          </aside>
+
+          <!-- Card wrapper: LOGIN + SIGNUP stacked in one glossy card -->
+          <div class="auth-card-wrapper">
+            <!-- LOGIN PANEL -->
+            <form
+              id="login-form"
+              class="form small login-form auth-panel active"
+              role="tabpanel"
+              aria-labelledby="tab-login"
+              novalidate
+            >
+              <div class="form-group">
+                <label for="login-email">Work email</label>
+                <input
+                  type="email"
+                  id="login-email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                  placeholder="you@example.com"
+                />
+                <small class="field-hint">
+                  Use the email linked to your partner account.
+                </small>
+              </div>
+
+              <div class="form-group">
+                <label for="login-password">Password</label>
+                <input
+                  type="password"
+                  id="login-password"
+                  name="password"
+                  autocomplete="current-password"
+                  minlength="8"
+                  required
+                  aria-required="true"
+                  placeholder="Enter your password"
+                />
+                <small class="field-hint">
+                  Minimum 8 characters. Keep your credentials private.
+                </small>
+              </div>
+
+              <div class="login-row">
+                <label class="remember-me">
+                  <input type="checkbox" id="remember-me" />
+                  <span>Remember this device</span>
+                </label>
+
+                <a href="#" class="forgot-link">Forgot password?</a>
+              </div>
+
+              <button type="submit" class="btn primary full login-btn">
+                Login to dashboard
+              </button>
+
+              <p id="login-status" class="form-status" role="alert" aria-live="polite"></p>
+
+              <p class="login-footer-note">
+                By logging in, you agree to our
+                <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.
+              </p>
+            </form>
+
+            <!-- SIGNUP PANEL -->
+            <form
+              id="signup-form"
+              class="form small login-form auth-panel"
+              role="tabpanel"
+              aria-labelledby="tab-signup"
+              novalidate
+            >
+              <div class="form-group">
+                <label for="signup-name">Full name</label>
+                <input
+                  type="text"
+                  id="signup-name"
+                  name="name"
+                  autocomplete="name"
+                  required
+                  aria-required="true"
+                  placeholder="Your name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="signup-email">Work email</label>
+                <input
+                  type="email"
+                  id="signup-email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                  placeholder="you@example.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="signup-phone">Phone number</label>
+                <input
+                  type="tel"
+                  id="signup-phone"
+                  name="phone"
+                  autocomplete="tel"
+                  placeholder="+91 98765 43210"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="signup-password">Password</label>
+                <input
+                  type="password"
+                  id="signup-password"
+                  name="password"
+                  autocomplete="new-password"
+                  minlength="8"
+                  required
+                  aria-required="true"
+                  placeholder="Create a strong password"
+                />
+                <small class="field-hint">
+                  At least 8 characters with letters, numbers and a symbol.
+                </small>
+              </div>
+
+              <div class="form-group">
+                <label for="signup-confirm-password">Confirm password</label>
+                <input
+                  type="password"
+                  id="signup-confirm-password"
+                  name="confirm-password"
+                  minlength="8"
+                  required
+                  aria-required="true"
+                  placeholder="Re‑enter password"
+                />
+              </div>
+
+              <button type="submit" class="btn primary full signup-btn">
+                Request partner access
+              </button>
+
+              <p id="signup-status" class="form-status" role="alert" aria-live="polite"></p>
+
+              <p class="login-footer-note">
+                Our team will verify your details and contact you with next steps.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & SUPPORT -->
+    <section id="contact" class="section light">
+      <div class="container contact-container">
+        <div class="contact-card">
+          <h2>Contact & Support</h2>
+          <p class="contact-intro">
+            Partner support is available 7 days a week for onboarding, training and technical help.
+          </p>
+
+          <div class="contact-grid">
+            <div class="contact-block">
+              <h3>Email</h3>
+              <p>Partner support: <a href="mailto:support@aien.travel">support@aien.travel</a></p>
+              <p>Onboarding: <a href="mailto:onboarding@aien.travel">onboarding@aien.travel</a></p>
+            </div>
+
+            <div class="contact-block">
+              <h3>Phone & WhatsApp</h3>
+              <p>India support: <a href="tel:+911234567890">+91 12345 67890</a></p>
+              <p>WhatsApp helpdesk: <a href="https://wa.me/911234567890" target="_blank">Chat on WhatsApp</a></p>
+            </div>
+
+            <div class="contact-block">
+              <h3>Business hours</h3>
+              <p>Monday – Saturday, 9:00 AM – 8:00 PM IST</p>
+              <p>Average response time: under 24 hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <span>© 2026 AIEN Travel. All rights reserved.</span>
+      <span>Partner support: support@aien.travel</span>
+    </div>
+  </footer>
+
+  <script src="login.js"></script>
+</body>
+</html>

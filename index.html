@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIEN Tour and Travels</title>
+
+  <!-- Google Font for better typography -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="home-page">
+  <!-- =========================
+       HERO / HOME SECTION
+       ========================= -->
+
+  <!-- Background image only for home-page (scoped in CSS) -->
+  <div class="hero-bg"></div>
+
+  <!-- Gradient overlay tuned for mountains/sky -->
+  <div class="overlay"></div>
+
+  <!-- Top navigation bar -->
+  <nav class="navbar">
+    <div class="brand">
+      <img src="logo.jpg" alt="AIEN Tour and Travels logo" class="logo" />
+      <span class="brand-name">AIEN Tour &amp; Travels</span>
+    </div>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+      &#9776;
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="js-scroll">Home</a></li>
+      <li><a href="#about" class="js-scroll">About</a></li>
+      <li><a href="#places" class="js-scroll">Places</a></li>
+      <li><a href="#packages" class="js-scroll">Packages</a></li>
+      <li><a href="#reviews" class="js-scroll">Reviews</a></li>
+      <li><a href="#contact" class="js-scroll">Contact</a></li>
+      <li><a href="login.html" class="js-scroll">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Centered hero content -->
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-inner">
+        <p class="hero-kicker">Explore Mountains • Lakes • Valleys</p>
+        <h1>Plan Your Journey With Us</h1>
+        <p class="hero-text">
+          Reach your destination with us. We take care of your demands and fulfill your needs.<br />
+          <span>We are trusted travel experts in Jammu and Kashmir, serving over 10,000 happy travelers.</span>
+        </p>
+        <div class="hero-actions">
+          <a href="/booking/book.html" class="btn primary js-scroll">Book Now</a>
+          <a href="#about" class="btn ghost js-scroll">Know More</a>
+        </div>
+        <div class="hero-meta">
+          <span>✓ Curated nature trips</span>
+          <span>✓ 24/7 travel support</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section light reveal">
+  <div class="container about-wrapper">
+    <div class="about-content">
+      <p class="section-kicker">Why travelers choose AIEN</p>
+      <h2>About AIEN Tour and Travels</h2>
+
+      <p class="about-lead">
+        AIEN Tour and Travels is a Jammu & Kashmir–based agency focused on
+        mountain, valley, and nature trips across Kashmir and major Indian
+        destinations. 
+      <p>
+        We handle cabs, stays, and local experiences, so you can enjoy the
+        journey without worrying about logistics.
+      </p>
+
+      <ul class="about-highlights">
+        <li>
+          <span class="about-icon">🗻</span>
+          <div>
+            <h4>Kashmir & hill experts</h4>
+            <p>Routes and timings planned around real local conditions.</p>
+          </div>
+        </li>
+        <li>
+          <span class="about-icon">🤝</span>
+          <div>
+            <h4>Trusted partners</h4>
+            <p>Verified drivers, guides, and stay providers.</p>
+          </div>
+        </li>
+        <li>
+          <span class="about-icon">🕒</span>
+          <div>
+            <h4>Trip-long support</h4>
+            <p>Help on WhatsApp and call throughout your trip.</p>
+          </div>
+        </li>
+      </ul>
+
+      <a href="#packages" class="btn primary js-scroll about-cta">Plan a trip now</a>
+    </div>
+
+    <div class="about-side">
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="10000">10K+</span>
+          <span class="stat-label">Travelers</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="10">10+</span>
+          <span class="stat-label">Years</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="35">35+</span>
+          <span class="stat-label">Destinations</span>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="card about-card">
+          <h3>Services</h3>
+          <ul>
+            <li>Trip planning & itineraries.</li>
+            <li>Cabs, flights, and trains.</li>
+            <li>Hotels, homestays, houseboats.</li>
+          </ul>
+        </div>
+        <div class="card about-card">
+          <h3>Value</h3>
+          <ul>
+            <li>Custom plans for your budget.</li>
+            <li>Local advice and guidance.</li>
+            <li>Transparent, clear communication.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ========================= 
+     PLACES SECTION
+     ========================= -->
+  <section id="places" class="section reveal">
+    <div class="container">
+      <p class="section-kicker">Explore Jammu &amp; Kashmir</p>
+      <h2>Popular Destinations</h2>
+
+      <!-- Grid wrapper -->
+      <div class="places-grid">
+        <a href="/destinations/srinagar/srinagar.html" class="place-card" data-place="srinagar">
+          <div class="place-image-wrap">
+            <img src="/photos/srinagar.jpg" alt="Srinagar" class="place-image" />
+            <span class="place-chip">Top Pick</span>
+          </div>
+          <div class="place-body">
+            <h3>Srinagar</h3>
+            <p>Dal Lake shikara rides, Mughal gardens, and sunset boulevards.</p>
+            <span class="place-link">View details →</span>
+          </div>
+        </a>
+
+        <a href="/destinations/phalgam/phalgam.html" class="place-card" data-place="phalgam">
+          <div class="place-image-wrap">
+            <img src="/photos/Pahalgam.jpg" alt="Pahalgam" class="place-image" />
+            <span class="place-chip">Scenic</span>
+          </div>
+          <div class="place-body">
+            <h3>Pahalgam</h3>
+            <p>Riverside walks, pine forests, and gateway to high-altitude treks.</p>
+            <span class="place-link">View details →</span>
+          </div>
+        </a>
+
+        <a href="/destinations/budgam/budgam.html" class="place-card" data-place="gulmarg">
+          <div class="place-image-wrap">
+            <img src="/photos/Gulmarg.jpg" alt="Gulmarg" class="place-image" />
+            <span class="place-chip">Snow</span>
+          </div>
+          <div class="place-body">
+            <h3>Gulmarg</h3>
+            <p>Gondola rides, winter skiing, and sweeping snowy meadows.</p>
+            <span class="place-link">View details →</span>
+          </div>
+        </a>
+
+        <a href="/destinations/ganderbal/ganderbal.html" class="place-card" data-place="sonmarg">
+          <div class="place-image-wrap">
+            <img src="/photos/sonmarg.jpg" alt="Sonmarg" class="place-image" />
+            <span class="place-chip">Glaciers</span>
+          </div>
+          <div class="place-body">
+            <h3>Sonmarg</h3>
+            <p>Glacial valleys, sparkling rivers, and alpine meadow views.</p>
+            <span class="place-link">View details →</span>
+          </div>
+        </a>
+
+        <a href="/destinations/jammu/jammu.html" class="place-card" data-place="jammu">
+          <div class="place-image-wrap">
+            <img src="/photos/jammu.jpeg" alt="Jammu" class="place-image" />
+            <span class="place-chip">City</span>
+          </div>
+          <div class="place-body">
+            <h3>Jammu</h3>
+            <p>Historic temples, local markets, and vibrant city culture.</p>
+            <span class="place-link">View details →</span>
+          </div>
+        </a>
+
+        <a href="/destinations/patnitop/patnitop.html" class="place-card" data-place="patnitop">
+          <div class="place-image-wrap">
+            <img src="/photos/patnitop.jpg" alt="Patnitop" class="place-image" />
+            <span class="place-chip">Hilltop</span>
+          </div>
+          <div class="place-body">
+            <h3>Patnitop</h3>
+            <p>Hilltop views, pine trails, and calm, misty mornings.</p>
+            <span class="place-link">View details →</span>
+          </div>
+        </a>
+
+        <a href="/destinations/jammu/jammu.html" class="place-card" data-place="sansar-katra">
+          <div class="place-image-wrap">
+            <img src="/photos/sansanar.jpg" alt="Sanasar &amp; Katra" class="place-image" />
+            <span class="place-chip">Pilgrim</span>
+          </div>
+          <div class="place-body">
+            <h3>Sanasar &amp; Katra</h3>
+            <p>Pilgrimage to Vaishno Devi with nearby meadows and viewpoints.</p>
+            <span class="place-link">View details →</span>
+          </div>
+        </a>
+
+        <a href="/destinations/ladakh/ladakh.html" class="place-card" data-place="leh-ladakh">
+          <div class="place-image-wrap">
+            <img src="/photos/ladakh.jpg" alt="Leh Ladakh" class="place-image" />
+            <span class="place-chip">High Pass</span>
+          </div>
+          <div class="place-body">
+            <h3>Leh Ladakh</h3>
+            <p>High passes, clear night skies, and surreal moonscapes.</p>
+            <span class="place-link">View details →</span>
+          </div>
+        </a>
+
+        <a href="/destinations/phalgam/phalgam.html" class="place-card" data-place="Ambarnath">
+          <div class="place-image-wrap">
+            <img src="/photos/ambernath.jpg" alt="Ambarnath" class="place-image" />
+            <span class="place-chip">Heritage</span>
+          </div>
+          <div class="place-body">
+            <h3>Ambarnath</h3>
+            <p>Heritage temples, peaceful living, growing connectivity.</p>
+            <span class="place-link">View details →</span>
+          </div>
+        </a>
+
+        <a href="/destinations/budgam/budgam.html" class="place-card" data-place="Budgam">
+          <div class="place-image-wrap">
+            <img src="/photos/doodhpathri.jpg" alt="Budgam" class="place-image" />
+            <span class="place-chip">Hill Station</span>
+          </div>
+          <div class="place-body">
+            <h3>Budgam</h3>
+            <p>Doodhpathri, known for gushing rivers and untouched beauty.</p>
+            <span class="place-link">View details →</span>
+          </div>
+        </a>
+
+        <a href="/destinations/ganderbal/ganderbal.html" class="place-card" data-place="Ganderbal">
+          <div class="place-image-wrap">
+            <img src="/photos/ganderbal.jpg" alt="Ganderbal" class="place-image" />
+            <span class="place-chip">Glacier</span>
+          </div>
+          <div class="place-body">
+            <h3>Ganderbal</h3>
+            <p>Snow capped mountains and Thajiwas Glacier views.</p>
+            <span class="place-link">View details →</span>
+          </div>
+        </a>
+
+        <a href="/destinations/kargil/kargil.html" class="place-card" data-place="kargil">
+          <div class="place-image-wrap">
+            <img src="place.png" alt="Kargil" class="place-image" />
+            <span class="place-chip">Heritage</span>
+          </div>
+          <div class="place-body">
+            <h3>Kargil</h3>
+            <p>Historic valleys, rugged landscapes, and stories of courage.</p>
+            <span class="place-link">View details →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= 
+     PACKAGES SECTION
+     ========================= -->
+  <section id="packages" class="section light reveal">
+    <div class="container">
+      <p class="section-kicker">Tailored stays &amp; routes</p>
+      <h2>Popular Tour Packages</h2>
+
+      <div class="packages-grid">
+        <!-- 1. Kashmir Honeymoon -->
+        <article class="package-card" data-package="kashmir-honeymoon">
+          <div class="package-image-wrap">
+            <img src="/photos/Honeymoon.jpeg" alt="Kashmir honeymoon view with lake and mountains"
+              class="package-image" />
+            <span class="package-image-chip">5D / 4N</span>
+          </div>
+
+          <div class="package-header">
+            <span class="package-badge">Honeymoon</span>
+            <h3>Kashmir Honeymoon Escape</h3>
+            <p class="package-location">Srinagar • Pahalgam • Gulmarg</p>
+          </div>
+          <ul class="package-list">
+            <li>5 Days / 4 Nights with premium houseboat stay.</li>
+            <li>Private cab transfers and shikara ride on Dal Lake.</li>
+            <li>Candle-light dinner and decorated room on arrival.</li>
+          </ul>
+          <div class="package-footer">
+            <span class="package-tag">Best for couples</span>
+            <button class="package-link">View details →</button>
+          </div>
+        </article>
+
+        <!-- 2. Family Kashmir -->
+        <article class="package-card" data-package="family-kashmir">
+          <div class="package-image-wrap">
+            <img src="/photos/family package.jpeg" alt="Family trip enjoying snow in Kashmir" class="package-image" />
+            <span class="package-image-chip">6D / 5N</span>
+          </div>
+
+          <div class="package-header">
+            <span class="package-badge badge-family">Family</span>
+            <h3>Family Highlights of Kashmir</h3>
+            <p class="package-location">Srinagar • Sonmarg • Gulmarg</p>
+          </div>
+          <ul class="package-list">
+            <li>6 Days / 5 Nights with family-friendly hotels.</li>
+            <li>Gondola tickets assistance for Gulmarg (optional).</li>
+            <li>Comfortable cab or tempo traveler for sightseeing.</li>
+          </ul>
+          <div class="package-footer">
+            <span class="package-tag">Kids friendly</span>
+            <button class="package-link">View details →</button>
+          </div>
+        </article>
+
+        <!-- Pilgrim Package -->
+        <article class="package-card" data-package="multi-faith-pilgrim">
+          <div class="package-image-wrap">
+            <img src="/photos/pilgrims.jpeg" alt="Temples, Islamic shrines, and Gurudwara pilgrimage"
+              class="package-image" />
+            <span class="package-image-chip">4D / 3N</span>
+          </div>
+
+          <div class="package-header">
+            <span class="package-badge badge-pilgrim">Pilgrim</span>
+            <h3>Multi-Faith Pilgrimage Tour</h3>
+            <p class="package-location">Temples • Dargahs • Gurudwara</p>
+          </div>
+
+          <ul class="package-list">
+            <li>Guided visits to major Hindu temples.</li>
+            <li>Darshan at renowned Islamic shrines and dargahs.</li>
+            <li>Prayer visit to historic Gurudwara.</li>
+            <li>Pickup and drop from nearest railway station or airport.</li>
+          </ul>
+
+          <div class="package-footer">
+            <span class="package-tag">Spiritual journey</span>
+            <button class="package-link">View details →</button>
+          </div>
+        </article>
+
+        <!-- 4. Leh–Ladakh Road Trip -->
+        <article class="package-card" data-package="ladakh-roadtrip">
+          <div class="package-image-wrap">
+            <img src="/photos/leh.jpg" alt="Leh Ladakh road with high mountains" class="package-image" />
+            <span class="package-image-chip">7D / 6N</span>
+          </div>
+
+          <div class="package-header">
+            <span class="package-badge badge-adventure">Adventure</span>
+            <h3>Leh–Ladakh Road Journey</h3>
+            <p class="package-location">Leh • Nubra • Pangong</p>
+          </div>
+          <ul class="package-list">
+            <li>Acclimatization day in Leh for safe high-altitude travel.</li>
+            <li>Visits to Khardung La, Nubra Valley, and Pangong Lake.</li>
+            <li>Experienced driver for mountain passes.</li>
+          </ul>
+          <div class="package-footer">
+            <span class="package-tag">High altitude</span>
+            <button class="package-link">View details →</button>
+          </div>
+        </article>
+
+        <!-- 5. Exclusive Winter Budget Package -->
+        <article class="package-card" data-package="exclusive-winter-budget">
+          <div class="winter-marquee">
+            <span>❄ Exclusive for January &amp; February ❄ Exclusive for January &amp; February ❄ Exclusive for January
+              &amp; February ❄</span>
+          </div>
+
+          <div class="package-image-wrap">
+            <img src="package-winter-budget.jpg" alt="Winter budget travel experience" class="package-image" />
+            <span class="package-image-chip">5D / 4N</span>
+          </div>
+
+          <div class="package-header">
+            <span class="package-badge badge-budget">Budget</span>
+            <h3>Exclusive Winter Budget Package</h3>
+            <p class="package-location">Snow Destinations • Winter Special</p>
+          </div>
+
+          <ul class="package-list">
+            <li>Budget-friendly winter stays with heating.</li>
+            <li>Snow experience and winter sightseeing.</li>
+            <li>Shared transfers to reduce costs.</li>
+            <li>Special winter pricing for budget travelers.</li>
+          </ul>
+
+          <div class="package-footer">
+            <span class="package-tag">Winter Special</span>
+            <button class="package-link">View details →</button>
+          </div>
+        </article>
+
+        <!-- 6. Custom J&K + Ladakh -->
+        <article class="package-card" data-package="custom-jk-ladakh">
+          <div class="package-image-wrap">
+            <img src="package-custom-jk-ladakh.jpg" alt="Custom trip across Jammu, Kashmir and Ladakh"
+              class="package-image" />
+            <span class="package-image-chip">Custom</span>
+          </div>
+
+          <div class="package-header">
+            <span class="package-badge badge-custom">Custom</span>
+            <h3>J&amp;K + Ladakh Custom Tour</h3>
+            <p class="package-location">Jammu • Kashmir • Ladakh</p>
+          </div>
+          <ul class="package-list">
+            <li>Combine pilgrim, leisure, and adventure in one plan.</li>
+            <li>Choice of hotel category and pace of travel.</li>
+            <li>Dedicated travel expert to design your itinerary.</li>
+          </ul>
+          <div class="package-footer">
+            <span class="package-tag">Fully flexible</span>
+            <button class="package-link">View details →</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       REVIEWS SECTION
+       ========================= -->
+  <section id="reviews" class="section light reveal">
+    <div class="container">
+      <h2>Traveler Reviews</h2>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <p>“Very smooth booking and excellent cab service during the trip.”</p>
+          <span>- Aarav, Family Trip</span>
+        </div>
+        <div class="review-card">
+          <p>“Loved the mountain views and stay options suggested by the team.”</p>
+          <span>- Mehak, Solo Traveler</span>
+        </div>
+        <div class="review-card">
+          <p>“Quick WhatsApp responses and flexible plan changes on the go.”</p>
+          <span>- Imran, Friends Group</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ========================= 
+     CONTACT US (ADVANCED)
+     ========================= -->
+  <section id="contact" class="section contact-advanced">
+    <div class="container contact-outer">
+
+      <!-- Left: intro + company info + socials -->
+      <div class="contact-panel contact-left">
+        <p class="section-kicker">Let’s plan your trip</p>
+        <h2>Contact Aien Tour and Travels</h2>
+        <p class="contact-lead">
+          Share your dates, destinations and budget. Our local experts from Jammu &amp; Kashmir
+          will design a customized itinerary for you.
+        </p>
+
+        <!-- Company details block -->
+        <div class="contact-info-block">
+          <div class="contact-info-header">
+            <h3>Company details</h3>
+            <span class="contact-badge">Verified J&amp;K Agency</span>
+          </div>
+
+          <ul class="contact-info-list">
+            <li>
+              <span class="info-icon">🏢</span>
+              <span><strong>Company:</strong> AIEN Tour and Travels</span>
+            </li>
+            <li>
+              <span class="info-icon">👤</span>
+              <span><strong>Owner:</strong> Irfan Bashir Parray</span>
+            </li>
+            <li>
+              <span class="info-icon">☎</span>
+              <span>
+                <strong>Phone:</strong>
+                <a href="tel:+918899459405">8899459405</a> /
+                <a href="tel:+917889772328">7889772328</a>
+              </span>
+            </li>
+            <li>
+              <span class="info-icon">💬</span>
+              <span>
+                <strong>WhatsApp:</strong>
+                <a href="https://wa.me/918899459405" target="_blank" rel="noopener">8899459405</a>
+              </span>
+            </li>
+            <li>
+              <span class="info-icon">🆔</span>
+              <span><strong>Registration No:</strong> JKEA00005423</span>
+            </li>
+            <li>
+              <span class="info-icon">✅</span>
+              <span><strong>Registered with:</strong> JK Tourism</span>
+            </li>
+            <li>
+              <span class="info-icon">✉</span>
+              <span>
+                <strong>Email 1:</strong>
+                <a href="mailto:aientourandtravels@gmail.com">aientourandtravels@gmail.com</a>
+              </span>
+            </li>
+            <li>
+              <span class="info-icon">✉</span>
+              <span>
+                <strong>Email 2:</strong>
+                <a href="mailto:itxirfanbashir13@gmail.com">itxirfanbashir13@gmail.com</a>
+              </span>
+            </li>
+            <li>
+              <span class="info-icon">📍</span>
+              <span><strong>Address:</strong> Pahalgam, Anantnag, Jammu &amp; Kashmir</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social media section -->
+        <div class="contact-social">
+          <h3>Connect with us</h3>
+          <p class="contact-social-text">
+            Follow our updates, offers and travel reels on social platforms.
+          </p>
+          <div class="social-icons-row">
+            <a class="social-btn fb" href="#" target="_blank" aria-label="Visit our Facebook">
+              <span class="social-icon">f</span>
+              <span class="social-label">Facebook</span>
+            </a>
+            <a class="social-btn ig" href="#" target="_blank" aria-label="Visit our Instagram">
+              <span class="social-icon">◎</span>
+              <span class="social-label">Instagram</span>
+            </a>
+            <a class="social-btn wa" href="https://wa.me/918899459405" target="_blank" aria-label="Chat on WhatsApp">
+              <span class="social-icon">✆</span>
+              <span class="social-label">WhatsApp</span>
+            </a>
+            <a class="social-btn gm" href="mailto:aientourandtravels@gmail.com" aria-label="Send us an email">
+              <span class="social-icon">@</span>
+              <span class="social-label">Gmail</span>
+            </a>
+            <a class="social-btn yt" href="#" target="_blank" aria-label="Visit our YouTube channel">
+              <span class="social-icon">▶</span>
+              <span class="social-label">YouTube</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: contact form card -->
+      <div class="contact-panel contact-right">
+        <form id="contact-form" class="contact-form-advanced">
+          <h3>Send us a message</h3>
+          <p class="contact-form-helper">
+            Replies usually within a few working hours. For urgent queries, call or WhatsApp us directly.
+          </p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" placeholder="you@example.com" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-phone">Phone / WhatsApp</label>
+              <input type="tel" id="contact-phone" placeholder="+91 ..." required />
+            </div>
+            <div class="form-group">
+              <label for="contact-topic">Topic</label>
+              <select id="contact-topic" required>
+                <option value="">Choose one</option>
+                <option>New booking</option>
+                <option>Existing booking</option>
+                <option>Group / Corporate</option>
+                <option>Partnership / Agency</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-dates">Approximate travel dates</label>
+            <input type="text" id="contact-dates" placeholder="Example: 15–20 March 2026" />
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" rows="4"
+              placeholder="Example: 4 adults, 1 child. Prefer Srinagar–Gulmarg–Pahalgam with mid-range hotels."
+              required></textarea>
+          </div>
+
+          <button type="submit" class="btn primary full">Submit Enquiry</button>
+          <p id="contact-status" class="form-status"></p>
+
+          <p class="contact-form-small">
+            By submitting, you agree to be contacted by phone, WhatsApp, or email regarding your enquiry.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= 
+     BLOG / LINK SECTION
+     ========================= -->
+  <section id="blog-links" class="blog-links-section">
+    <div class="container blog-links-inner">
+      <!-- Column 1: Popular Posts -->
+      <div class="blog-column">
+        <h3>Popular Post</h3>
+        <ul>
+          <li><a href="#"><span class="arrow">›</span> Goa Beach</a></li>
+          <li><a href="#"><span class="arrow">›</span> World Heritage Sites in India</a></li>
+          <li><a href="#"><span class="arrow">›</span> Trekking in Uttarakhand</a></li>
+          <li><a href="#"><span class="arrow">›</span> Tourist Places in Kashmir</a></li>
+          <li><a href="#"><span class="arrow">›</span> Haunted Places in India</a></li>
+          <li><a href="#"><span class="arrow">›</span> Honeymoon Places in Jammu &amp; Kashmir</a></li>
+          <li><a href="#"><span class="arrow">›</span> Best Time to Visit Gulmarg</a></li>
+          <li><a href="#"><span class="arrow">›</span> Weekend Trips from Jammu</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2: About the Site -->
+      <div class="blog-column">
+        <h3>About the Site</h3>
+        <ul>
+          <li><a href="#about"><span class="arrow">›</span> About Us</a></li>
+          <li><a href="#reviews"><span class="arrow">›</span> Testimonials</a></li>
+          <li><a href="#contact"><span class="arrow">›</span> Contact Us</a></li>
+          <li><a href="#packages"><span class="arrow">›</span> Tour Packages</a></li>
+          <li><a href="#places"><span class="arrow">›</span> Destinations in J&amp;K</a></li>
+          <li><a href="#"><span class="arrow">›</span> Terms &amp; Conditions</a></li>
+          <li><a href="#"><span class="arrow">›</span> Privacy Policy</a></li>
+          <li><a href="#"><span class="arrow">›</span> FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Tour Packages -->
+      <div class="blog-column">
+        <h3>Tour Packages</h3>
+        <ul>
+          <li><a href="#packages"><span class="arrow">›</span> Kashmir Honeymoon Tour</a></li>
+          <li><a href="#packages"><span class="arrow">›</span> Family Kashmir Holiday</a></li>
+          <li><a href="#packages"><span class="arrow">›</span> Vaishno Devi with Patnitop</a></li>
+          <li><a href="#packages"><span class="arrow">›</span> Jammu &amp; Kashmir Darshan</a></li>
+          <li><a href="#packages"><span class="arrow">›</span> Leh–Ladakh Road Trip</a></li>
+          <li><a href="#packages"><span class="arrow">›</span> Budget Backpacker Circuit</a></li>
+          <li><a href="#packages"><span class="arrow">›</span> Custom J&amp;K + Ladakh Tour</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Popular Destinations -->
+      <div class="blog-column">
+        <h3>Popular Destination</h3>
+        <ul>
+          <li><a href="#places"><span class="arrow">›</span> Srinagar</a></li>
+          <li><a href="#places"><span class="arrow">›</span> Pahalgam</a></li>
+          <li><a href="#places"><span class="arrow">›</span> Gulmarg</a></li>
+          <li><a href="#places"><span class="arrow">›</span> Sonmarg</a></li>
+          <li><a href="#places"><span class="arrow">›</span> Patnitop</a></li>
+          <li><a href="#places"><span class="arrow">›</span> Sanasar &amp; Katra</a></li>
+          <li><a href="#places"><span class="arrow">›</span> Leh–Ladakh</a></li>
+          <li><a href="#places"><span class="arrow">›</span> Kargil</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> AIEN Tour and Travels. All rights reserved.</p>
+      <p>Crafted with nature-inspired colors and mountain journeys in mind.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

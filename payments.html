@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Preference | AIEN Tour & Travels</title>
+
+  <!-- Global site styles -->
+  <link rel="stylesheet" href="/style.css" />
+  <!-- Payment page specific styles -->
+  <link rel="stylesheet" href="payments.css" />
+</head>
+<body>
+  <div class="page-bg-overlay"></div>
+
+  <div class="page">
+    <header class="site-header">
+      <div class="logo-wrap">
+        <!-- Use same logo as booking page -->
+        <img src="logo.png" alt="AIEN Tour & Travels Logo" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-name">AIEN Tour &amp; Travels</span>
+          <span class="logo-tagline">Secure payment preference</span>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="header-contact">
+          <span>📞 8899459405 / 7889772328</span>
+          <span>📱 WhatsApp: 8899459405</span>
+        </div>
+        <a href="book.html" class="btn header-btn">Back to booking</a>
+      </div>
+    </header>
+
+    <section class="booking-section payment-section-page">
+      <div class="booking-inner">
+        <!-- Left info block -->
+        <div class="booking-copy payment-left">
+          <p class="section-kicker">Step 2 of 2</p>
+          <h1>Choose Payment Preference</h1>
+          <p class="booking-intro">
+            Select how you would like to pay once your itinerary and final amount
+            are confirmed by our team.
+          </p>
+          <ul class="booking-points">
+            <li><span>✓</span> Secure UPI, card and bank-transfer options.</li>
+            <li><span>✓</span> Official receipts from AIEN Tour &amp; Travels.</li>
+            <li><span>✓</span> Support team available on WhatsApp for any queries.</li>
+          </ul>
+          <div class="booking-badge-row">
+            <span>Registered with JK Tourism</span>
+            <span>Reg. No: JKEA00005423</span>
+          </div>
+          <p class="payment-left-note">
+            No money is charged on this page. You only tell us your preferred method.
+          </p>
+        </div>
+
+        <!-- Right payment form -->
+        <div class="booking-form-wrap">
+          <form id="payment-form" class="card-surface payment-form-main">
+            <div class="payment-step-label">Payment step</div>
+            <h2 class="booking-form-title">Payment details</h2>
+            <p class="booking-form-sub">
+              This page stores your preferred payment method. Actual payment links / details will be shared by our team after confirming availability.
+            </p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="estimated-amount">Estimated Amount (optional)</label>
+                <input
+                  type="text"
+                  id="estimated-amount"
+                  placeholder="Example: ₹25,000 per person"
+                />
+              </div>
+              <div class="form-group">
+                <label for="currency">Currency</label>
+                <select id="currency">
+                  <option>INR (₹)</option>
+                  <option>USD ($)</option>
+                  <option>EUR (€)</option>
+                </select>
+              </div>
+            </div>
+
+            <p class="payment-sub-page">Preferred payment method *</p>
+            <div class="payment-pill-row">
+              <label class="payment-pill">
+                <input type="radio" name="pay-method" value="upi" />
+                <span class="payment-pill-icon">₹</span>
+                <span>UPI (GPay / PhonePe / Paytm)</span>
+              </label>
+              <label class="payment-pill">
+                <input type="radio" name="pay-method" value="card" />
+                <span class="payment-pill-icon">💳</span>
+                <span>Credit / Debit Card</span>
+              </label>
+              <label class="payment-pill">
+                <input type="radio" name="pay-method" value="bank" />
+                <span class="payment-pill-icon">🏦</span>
+                <span>Bank Transfer (NEFT / RTGS)</span>
+              </label>
+              <label class="payment-pill">
+                <input type="radio" name="pay-method" value="cash" />
+                <span class="payment-pill-icon">💵</span>
+                <span>Cash at Office</span>
+              </label>
+            </div>
+
+            <div class="form-group" style="margin-top: 0.9rem;">
+              <label for="payment-notes">Payment notes (optional)</label>
+              <textarea
+                id="payment-notes"
+                rows="3"
+                placeholder="Example: Prefer UPI; send QR code. or Want to pay 30% advance, rest on arrival."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn primary full">Save Payment Preference</button>
+            <p id="payment-status" class="form-status"></p>
+
+            <p class="payment-disclaimer">
+              After you submit this step, our team will verify availability and send you
+              the exact payable amount along with secure payment instructions.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      © <span id="year"></span> AIEN Tour &amp; Travels · Pahalgam, Anantnag, Jammu &amp; Kashmir
+    </footer>
+  </div>
+
+  <script src="payments.js"></script>
+</body>
+</html>
